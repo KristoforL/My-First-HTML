@@ -1,0 +1,50 @@
+/*ALL THE ELEMENTS FOR THE PAGE*/
+
+body{
+	background:#1e90ff;
+}
+
+
+input, p{
+display: inline;
+}
+
+/*CLASSES*/
+
+.form{
+	
+
+	width:7%;
+	height:45%;
+	border: 3px solid #00ff7f;
+	border-radius: 25px;
+	padding: 10%;
+	background:url(airline.jpeg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+/*IDs*/
+
+#form{
+	width:100%;
+}
+
+#ft{
+	font-size: 20px;
+
+}
+
+#rb{
+	font-size: 110%;
+}
+
+#rtb{
+	font-size: 110%;
+}
+
+#search, #cancel{
+	border-radius: 70%;
+	background-color: red;
+	color: black;
+}

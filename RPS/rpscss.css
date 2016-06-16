@@ -1,0 +1,35 @@
+html{
+	background-color: navy;
+	color: red;
+}
+
+p, h1 {
+	display: inline;
+	font-size: 150%
+}
+
+button{
+	background-color: black;
+	color: white;
+	display: inline;
+}
+
+ul > li{
+	font-size: 150%;
+	display: inline;
+}
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:active {
+    color: yellow;
+}

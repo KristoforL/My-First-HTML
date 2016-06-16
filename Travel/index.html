@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LETS FLY</title>
+	 <link rel="stylesheet" type="text/css" href="travel.css">
+	 
+	 <!-- LOOK THIS UP -->
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	</head>
+<body>
+	<center>
+		<div>
+		<div class="form" style="margin: 0px">
+			<h1>Flight Search</h1>
+			<form id="form" action="">
+		<br>
+		<br>
+				<p id="ft"><strong>From:</strong></p>
+		<br>
+				<select name="City" id="from">
+					<option value="empty"></option>
+					<option value="Atlanta">Atlanta</option>
+					<option value="Chicago">Chicago</option>
+					<option value="New York">New York</option>
+					<option value="Miami">Miami</option>
+					<option value="Orlando">Orlando</option>
+				</select>
+		<br>
+		<br>
+				<p id="ft"><strong>To:</strong></p>
+		<br>
+				<select name="City" id="to">
+					<option value="empty"></option>
+					<option value="Atlanta">Atlanta</option>
+					<option value="Chicago">Chicago</option>
+					<option value="New York">New York</option>
+					<option value="Miami">Miami</option>
+					<option value="Orlando">Orlando</option>
+				</select>
+		<br>
+		<br>
+				<form>
+					<input id="ow" type="radio" name="trip" value="One Way" checked=""> <p id="rb">One Way</p>
+					<br>
+					<input id="rt" type="radio" name="trip" value="Round Trip" checked="checked"> <p id="rb">Round Trip</p>
+				</form>
+		<br>
+				<form>
+					<p id="rb">Departure</p> 
+					<input class="depart" id="rtb" type="date" name="trip" value=""> 
+					<br>
+					<p class="bg">Return</p> 
+					<input class="return" id="rtb" type="date" name="trip" value=""> 
+				</form>	
+		<br>
+		<br>
+				<button id="search">Search</button>
+				<button id="cancel">Cancel</button>
+			</form>
+
+		<br>
+		
+		</div>	
+
+		<p class="searching"><p>
+		
+		</div>
+	</center>
+	
+	<script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>	
+	<script type="text/javascript" src="travel.js"></script>
+	
+</body>
+</html>
