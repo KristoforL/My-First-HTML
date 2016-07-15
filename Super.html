@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SuperHeroes</title>
+
+		<script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+		<!-- <script src="assets/js/jquery-2.2.3.min.js"></script> -->
+		<script type="text/javascript" src="super.js"></script>
+	</head>
+
+	<body>
+		<h1>Superheroes</h1>
+		<input type="text" name="Superhero Name" value="Superhero Name" class="superName">
+		<form>
+			<p style="margin:5px 0 2px 0">Can they Fly?</p>
+			Yes<input type="radio" name="Fly" id="fly">
+			No<input type="radio" name="Fly" id="noFly">
+		</form>
+		<input type="text" name="power" class="power">
+		<button type="button" class="addPower">Add Power</button>
+		<button type="button" class="saveHero">Save</button>
+		<br>
+		<button type="button" class="showSupers">Display All</button>
+		<p class="superList"></p>
+		<button type="button" class="flyingSupers">Display Flyers</button>
+		<p class="flyingHeroes"></p>
+		<button type="button" class="clearChanges">Clear</button>
+	</body>
+</html>
