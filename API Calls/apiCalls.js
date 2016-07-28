@@ -44,7 +44,7 @@ $.getJSON( "http://www.omdbapi.com/?s=Rugrats&r=json", function( data ) {
   	 final.push( "<li>" + items[j].Title + " came out during " + items[j].Year + "</li>" );
 
   	// Logging to make sure that it was putting out the correct information
-  	console.log(items[j].Title);
+  	// console.log(items[j].Title);
   }
   
   // This is creating a new ul tag with a join function in it to join all the li tags and adding them to the body
@@ -53,4 +53,50 @@ $.getJSON( "http://www.omdbapi.com/?s=Rugrats&r=json", function( data ) {
   }).appendTo( ".mySearch" );
 
 });
+
+
+$.getJSON( "https://cigarsbaseballserver.herokuapp.com/cigarsbaseball/roster", function( data ) {
+
+	var items = data;
+
+	var j;
+
+	for (j=0; j<items.length; j++){
+		
+		if(items[j].position == "OF"){
+			
+			$("<ul/>",{
+			html: items[j].position + " "+ items[j].name
+			}).appendTo(".bb");
+		}
+
+		console.log(items[j].name+" "+items[j].position);
+	}
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
