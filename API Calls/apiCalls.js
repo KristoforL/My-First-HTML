@@ -63,7 +63,7 @@ $.getJSON( "https://cigarsbaseballserver.herokuapp.com/cigarsbaseball/roster", f
 
 	for (j=0; j<items.length; j++){
 		
-		if(items[j].position == "OF"){
+		if(items[j].position.includes("OF")){
 			
 			$("<ul/>",{
 			html: items[j].position + " "+ items[j].name
@@ -76,6 +76,9 @@ $.getJSON( "https://cigarsbaseballserver.herokuapp.com/cigarsbaseball/roster", f
 
 });
 
+
+// var str = "Hello world, welcome to the universe.";
+// var n = str.includes("world");
 
 
 
