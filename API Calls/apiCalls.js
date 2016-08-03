@@ -55,31 +55,50 @@ $.getJSON( "http://www.omdbapi.com/?s=Rugrats&r=json", function( data ) {
 });
 
 
+// $.getJSON( "https://cigarsbaseballserver.herokuapp.com/cigarsbaseball/roster", function( data ) {
+
+// 	var items = data;
+
+// 	var j;
+
+// 	for (j=0; j<items.length; j++){
+		
+// 		if(items[j].position.includes("OF")){
+			
+// 			$("<ul/>",{
+// 			html: items[j].position + " "+ items[j].name
+// 			}).appendTo(".bb");
+// 		}
+
+// 		console.log(items[j].name+" "+items[j].position);
+// 	}
+
+
+// });
+
+
+$(".apiBB").click(function(){
+
 $.getJSON( "https://cigarsbaseballserver.herokuapp.com/cigarsbaseball/roster", function( data ) {
 
 	var items = data;
 
+	var UI = $(".BB").val();
 	var j;
 
 	for (j=0; j<items.length; j++){
 		
-		if(items[j].position.includes("OF")){
+		if(items[j].position.includes(UI)){
 			
 			$("<ul/>",{
 			html: items[j].position + " "+ items[j].name
 			}).appendTo(".bb");
 		}
 
-		console.log(items[j].name+" "+items[j].position);
+		// console.log(items[j].name+" "+items[j].position);
 	}
-
-
 });
-
-
-// var str = "Hello world, welcome to the universe.";
-// var n = str.includes("world");
-
+})
 
 
 
