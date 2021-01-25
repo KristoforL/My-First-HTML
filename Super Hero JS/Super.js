@@ -66,7 +66,7 @@ var arrayCount = 6;
 		console.log(powers);
 
 
-		superHeroes[arrayCount] = new Superhero(name,powers);
+		superHeroes[arrayCount] = new Superhero(name, powers);
 
 		// Clears all the information in place for the stored superhero
 		$(".extraPowers").text("");
