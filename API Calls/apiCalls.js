@@ -17,8 +17,8 @@ $(".api").click(function(){
 
   		  for(j=0; j<items.length; j++){
 
-  	 final.push( "<li>" + items[j].Title + " came out during " + items[j].Year + "</li>" );
-  	  	console.log(items[j].Title);
+			final.push( "<li>" + items[j].Title + " came out during " + items[j].Year + "</li>" );
+			console.log(items[j].Title);
   		}
 	    
 	    $( "<ul/>", {
@@ -31,28 +31,28 @@ $(".api").click(function(){
 
 // This is displaying the data from the API call
 
-$.getJSON( "http://www.omdbapi.com/?s=Rugrats&r=json", function( data ) {
+// $.getJSON( "http://www.omdbapi.com/?s=Rugrats&r=json", function( data ) {
 
-  var final = [];
+//   var final = [];
 
-  var items = data.Search;
-  var j;
+//   var items = data.Search;
+//   var j;
 
-  // This cycles through the array and pushs the value of a array into a new array
-  for(j=0; j<items.length; j++){
+//   // This cycles through the array and pushs the value of a array into a new array
+//   for(j=0; j<items.length; j++){
 
-  	 final.push( "<li>" + items[j].Title + " came out during " + items[j].Year + "</li>" );
+//   	 final.push( "<li>" + items[j].Title + " came out during " + items[j].Year + "</li>" );
 
-  	// Logging to make sure that it was putting out the correct information
-  	// console.log(items[j].Title);
-  }
+//   	// Logging to make sure that it was putting out the correct information
+//   	// console.log(items[j].Title);
+//   }
   
-  // This is creating a new ul tag with a join function in it to join all the li tags and adding them to the body
-  $( "<ul/>", {
-    html: final.join( "" )
-  }).appendTo( ".mySearch" );
+//   // This is creating a new ul tag with a join function in it to join all the li tags and adding them to the body
+//   $( "<ul/>", {
+//     html: final.join( "" )
+//   }).appendTo( ".mySearch" );
 
-});
+// });
 
 
 // $.getJSON( "https://cigarsbaseballserver.herokuapp.com/cigarsbaseball/roster", function( data ) {
