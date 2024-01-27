@@ -14,3 +14,6 @@ This was my first try at building a basic web page and adding onto it with the n
 
 It may be a lot to take in as it was a playground for me when I was learning html css and javascript. I have sense then revamped this site with some of the new ideas I had and made the site responsive and then decided to make it my portfolio page which is running at the following URL:
 https://kristoforl.github.io/OnlinePortfolio
+
+
+This Repository is currently End of Life state and will not longer be maintained but the projects will be on display in the portfolio listed above
