@@ -39,7 +39,7 @@ $(document).ready(function(){
 
 		if($("#from").val()!="empty" && $("#to").val()!="empty"){
 
-			//Checks to see if the vlaues are equal to one another	
+			//Checks to see if the values are equal to one another	
 			if($("#from").val() != $("#to").val()){
 						
 				if(roundTrip == 0){
@@ -49,7 +49,7 @@ $(document).ready(function(){
 					}
 			
 			}else{
-				alert("YOU ARE DUMB FOR REAL. YOU CAN NOT FLY FROM AND TO THE SAME LOCATION!")
+				alert("YOU ARE NOT ALLOWED TO AND FROM THE SAME DESTINATION!")
 			}
 		}else{
 			alert("Please fill in both to and from locations")
